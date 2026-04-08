@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Cổng thông tin & Dự án</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #004a95;
+            /* Màu đặc trưng của khối cơ quan nhà nước */
+            --accent-gold: #f1c40f;
+            --bg-gray: #f4f6f9;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-gray);
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+        }
+
+        /* Header phong cách cổng thông tin */
+        header {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-gold);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-content p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Container chính */
+        .main-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-blue);
+            margin: 10px auto;
+        }
+
+        /* Danh sách liên kết dạng lưới (Grid) */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .link-item {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        .link-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-left-color: var(--accent-gold);
+        }
+
+        .link-icon {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-right: 20px;
+            width: 50px;
+            text-align: center;
+        }
+
+        .link-info h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--primary-blue);
+        }
+
+        .link-info p {
+            margin: 5px 0 0;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.8rem;
+            color: #888;
+            background: #fff;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            .link-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Trung tâm Quản lý hạ tầng Thành phố Đà Nẵng</h1>
+            <p>Dữ liệu & Công nghệ</p>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="section-title">
+            <h2>DANH MỤC CÁC DỮ LIỆU & TRANG WEB CỦA TRUNG TÂM QUẢN LÝ HẠ TẦNG</h2>
+        </div>
+
+        <div class="link-grid">
+            <a href="https://huythanh307.github.io/bandodn/" class="link-item">
+                <div class="link-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div class="link-info">
+                    <h3>Bản đồ đường tỉnh và đường quốc lộ Đà Nẵng</h3>
+                    <p>Hệ thống tra cứu hạ tầng giao thông đường tỉnh và đường quốc lộ thành phố.</p>
+                </div>
+            </a>
+
+            <a href="#" class="link-item">
+                <div class="link-icon"><i class="fa-solid fa-bridge"></i></div>
+                <div class="link-info">
+                    <h3>Quản lý Hạ tầng Cầu đường</h3>
+                    <p>Dữ liệu bảo trì và kiểm định an toàn công trình.</p>
+                </div>
+            </a>
+
+            <a href="https://byvn.net/qHrr" class="link-item">
+                <div class="link-icon"><i class="fa-solid fa-solar-panel"></i></div>
+                <div class="link-info">
+                    <h3>Quản lý công trình TTQLHT năm 2026</h3>
+                    <p>Quản lý công trình Trung tâm Quản lý hạ tầng năm 2026</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/huythanh307" class="link-item">
+                <div class="link-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="link-info">
+                    <h3>Kho lưu trữ Mã nguồn</h3>
+                    <p>Tổng hợp các dự án lập trình và công cụ hỗ trợ.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Bản quyền thuộc về Hệ thống quản lý cá nhân.</p>
+        <p>Thiết kế dựa trên tiêu chuẩn Cổng thông tin điện tử Nhà nước.</p>
+    </footer>
+</body>
+
+</html>
