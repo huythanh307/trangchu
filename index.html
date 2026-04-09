@@ -81,7 +81,7 @@
             border: 1px solid #ddd;
             padding: 20px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             text-decoration: none;
             color: var(--text-dark);
             transition: all 0.3s ease;
@@ -93,6 +93,28 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             background-color: #fff;
             border-left-color: var(--accent-gold);
+        }
+
+        .link-preview {
+            margin-top: 15px;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            width: 100%;
+            height: 180px;
+            background-color: #f7f8fb;
+            line-height: 0;
+        }
+
+        .link-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .link-info {
+            width: 100%;
         }
 
         .link-icon {
@@ -153,15 +175,19 @@
                 <div class="link-icon"><i class="fa-solid fa-map-location-dot"></i></div>
                 <div class="link-info">
                     <h3>Bản đồ đường tỉnh và đường quốc lộ Đà Nẵng</h3>
-                    <p>Hệ thống tra cứu hạ tầng giao thông đường tỉnh và đường quốc lộ thành phố.</p>
+                    <div class="link-preview">
+                        <img src="BanDoDuongBo.png" alt="Bản đồ đường bộ Đà Nẵng">
+                    </div>
                 </div>
             </a>
 
-            <a href="#" class="link-item">
-                <div class="link-icon"><i class="fa-solid fa-bridge"></i></div>
+            <a href="https://huythanh307.github.io/BanDoDuongThuyNoiDia/MapDuongThuy.html" class="link-item">
+                <div class="link-icon"><i class="fa-solid fa-water"></i></div>
                 <div class="link-info">
-                    <h3>Quản lý Hạ tầng Cầu đường</h3>
-                    <p>Dữ liệu bảo trì và kiểm định an toàn công trình.</p>
+                    <h3>Bản đồ đường thủy nội địa Đà Nẵng</h3>
+                    <div class="link-preview">
+                        <img src="BanDoDuongThuy.png" alt="Bản đồ đường thủy nội địa Đà Nẵng">
+                    </div>
                 </div>
             </a>
 
@@ -169,15 +195,16 @@
                 <div class="link-icon"><i class="fa-solid fa-solar-panel"></i></div>
                 <div class="link-info">
                     <h3>Quản lý công trình TTQLHT năm 2026</h3>
-                    <p>Quản lý công trình Trung tâm Quản lý hạ tầng năm 2026</p>
+                    <div class="link-preview">
+                        <img src="CongTrinh.png" alt="Quản lý công trình TTQLHT năm 2026">
+                    </div>
                 </div>
             </a>
 
             <a href="https://github.com/huythanh307" class="link-item">
                 <div class="link-icon"><i class="fa-brands fa-github"></i></div>
                 <div class="link-info">
-                    <h3>Kho lưu trữ Mã nguồn</h3>
-                    <p>Tổng hợp các dự án lập trình và công cụ hỗ trợ.</p>
+                    <h3>Kho lưu trữ</h3>
                 </div>
             </a>
         </div>
